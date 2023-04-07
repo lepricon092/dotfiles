@@ -1,0 +1,124 @@
+# alacritty.yml
+
+# > Modules
+import:
+  - ~/.config/alacritty/modules/colors.yml
+
+# > Environment Variables
+env:
+  TERM: xterm-256color
+
+# > Window Settings
+window:
+  #  Window dimensions ( not in pixels ), both should be a minimum of 2,
+  # if set to 0, it will be handled automatically.
+  dimensions:
+    columns: 85
+    lines: 25
+  
+  #  Window position by default,
+  # if not set it will be handled by the window manager.
+  #position:
+    #x: 0
+    #y: 0
+
+  #  Scaled by DPI, changes requires restart.
+  padding:
+    x: 4
+    y: 4
+
+  #  Spread additional padding evenly around the terminal content.
+  dynamic_padding: true
+
+  #  Window decorations, valid values are: full, none;
+  # MacOS has extra values: transparent, buttonless.
+  #  Although, if you're using MacOS, I would not expect you to be using my dotfiles, you do you I guess.
+  decorations: full
+
+  #  Background opacity, 0.0 is fully transparent, 1.0 is fully opaque. 
+  opacity: 1.0 
+
+  #  Startup mode, valie values are: Windowed, Maximized, Fullscreen;
+  # MacOS has extra values: SimpleFullscreen.
+  startup_mode: Windowed
+
+  #  Default Window title
+  title: Alacritty
+
+  #  Allow terminal applications to change Alacritty's window title.
+  dynamic_title: false
+
+  #  Window class, Linux/BSD Only.
+  class:
+    instance: Alacritty # Application instance name.
+    general: Alacritty  # General application class.
+
+  #  GTK theme variant, not sure what this does, but it's Linux/BSD only. 
+  #gtk_theme_variant: None
+
+scrolling:
+  history: 10000 # Maximum lines you can scroll, set to 0 to disable scrolling.
+  multiplier: 5  # How quickly you can scroll.
+
+# > Fonts
+font:
+  normal:
+    family: JetBrainsMono Nerd Font
+    style: Regular
+  bold:
+    family: JetBrainsMono Nerd Font
+    style: Bold
+  italic:
+    family: JetBrainsMono Nerd Font
+    style: Italic
+  bold_italic:
+    family: JetBrainsMono Nerd Font
+    style: Bold Italic
+
+  size: 10.0 # Font size
+
+  offset:
+    x: 1 # Letter spacing
+    y: 0 # Line spacing
+
+  #  Glyph offset determines the locations of the glyphs within their cells with
+  # the default being at the bottom. Increasing `x` moves the glyph to the
+  # right, increasing `y` moves the glyph upward.
+  glyph_offset:
+    x: 0
+    y: 0
+
+  # For retina screen on MacOS
+  #use_thin_strokes: true
+draw_bold_text_with_bright_colors: true
+
+cursor:
+  # Cursor style
+  style:
+    # Cursor shape
+    #
+    # Values for `shape`:
+    #   - ▇ Block
+    #   - _ Underline
+    #   - | Beam
+    shape: Beam
+
+    # Blinking, valid values are: Never, Off, On, Always.
+    blinking: On
+  
+  # Alacritty's Vi mode cursor style
+  vi_mode_style: Underline
+
+  # Cursor blinking interval in milliseconds.
+  blink_interval: 500
+
+  # If this is `true`, the cursor will be rendered as a hollow box when the
+  # window is not focused.
+  unfocused_hollow: true
+
+  # Thickness of the cursor relative to the cell width as floating point number
+  # from `0.0` to `1.0`.
+  thickness: 0.15
+
+# Live config reload, changes require restart.
+live_config_reload: true

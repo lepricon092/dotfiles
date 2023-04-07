@@ -1,0 +1,37 @@
+# /home/alex/.config/betterlockscreenrc
+
+# default options
+display_on=0
+span_image=false
+lock_timeout=300
+fx_list=(dimblur)
+dim_level=40
+blur_level=1
+pixel_scale=10,1000
+solid_color=333333
+wallpaper_cmd="feh --bg-fill $HOME/Downloads/wallpaper.jpg"
+quiet=false
+
+# default theme
+loginbox=00000066
+loginshadow=00000000
+locktext="Enter password"
+font="JetBrains Mono Nerd Font"
+ringcolor=babbf1ff
+insidecolor=00000000
+separatorcolor=00000000
+ringvercolor=ffffffff
+insidevercolor=00000000
+ringwrongcolor=ffffffff
+insidewrongcolor=e78284ff
+timecolor=ffffffff
+time_format="%H:%M"
+greetercolor=ffffffff
+layoutcolor=ffffffff
+keyhlcolor=ffffffff
+bshlcolor=ffffffff
+verifcolor=a8d7feff
+wrongcolor=e78284ff
+modifcolor=d23c3dff
+bgcolor=000000ff
+
